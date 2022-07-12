@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DayList from './DayList';
+// import Appointment from "components/Appointment";
 
 import "components/Application.scss";
 
@@ -38,8 +39,8 @@ export default function Application(props) {
         <nav className="sidebar__menu">
           <DayList 
             days={days}
-            day={day}
-            setDay={setDay}
+            value={day}
+            onChange={setDay}
           />
         </nav>
         <img
