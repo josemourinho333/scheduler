@@ -9,7 +9,7 @@ describe('Application Tests', () => {
     const { getByText } = render(<Application />);
 
     return waitForElement(() => getByText('Monday'));
-  });
+  }); 
 }) 
 
  
