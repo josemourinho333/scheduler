@@ -34,7 +34,6 @@ export default function Appointment(props) {
     transition(SAVING);
     props.bookInterview(props.id, interview)
       .then((state) => {
-        console.log('***SHOW*', state);
         transition(SHOW);
       })
       .catch((error) => {
