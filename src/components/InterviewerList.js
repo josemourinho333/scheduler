@@ -2,7 +2,7 @@ import React from 'react';
 import InterviewerListItem from 'components/InterviewerListItem';
 import './InterviewerList.scss';
 
-export default function InterviewerList({ interviewers, onChange, value}) {
+export default function InterviewerList({ interviewers, value, onChange}) {
   const interviewersMap = interviewers.map((interviewer) => {
     return (
       <InterviewerListItem 
