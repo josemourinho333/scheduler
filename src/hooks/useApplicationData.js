@@ -42,7 +42,7 @@ const useApplicationData = () => {
       axios.get('http://localhost:8001/api/appointments'),
       axios.get('http://localhost:8001/api/interviewers')
     ]).then((all) => {
-      console.log('useeffect', all);
+      console.log('use-effect', all);
       const days = all[0].data;
       const appointments = all[1].data;
       const interviewers = all[2].data;

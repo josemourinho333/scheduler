@@ -10,5 +10,6 @@ describe('Application Tests', () => {
 
     return waitForElement(() => getByText('Monday'));
   });
-})
+}) 
 
+ 
