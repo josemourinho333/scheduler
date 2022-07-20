@@ -94,7 +94,7 @@ export default {
         status: 200,
         statusText: 'No Content'
       })
-    } 
+    }
 
     return Promise.reject({
       status: 404,

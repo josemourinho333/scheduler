@@ -149,4 +149,4 @@ describe('Application Tests', () => {
     fireEvent.click(getByAltText(appointment, "Close"));
     await waitForElement(() => getByPlaceholderText(appointment, /Enter Student Name/i))
   });
-})  
+}) 
