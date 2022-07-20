@@ -6,7 +6,7 @@ import DayListItem from "components/DayListItem";
 
 afterEach(cleanup);
 
-describe.skip('DayListItem Tests', () => {
+describe('DayListItem Tests', () => {
   it("renders without crashing", () => {
     render(<DayListItem />);
   });

@@ -5,7 +5,7 @@ import { checkPropTypes } from 'prop-types';
 
 afterEach(cleanup);
 
-describe.skip('Form Tests', () => {
+describe('Form Tests', () => {
   const interviewers = [
     {
       id: 1,

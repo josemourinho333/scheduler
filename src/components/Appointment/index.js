@@ -37,7 +37,7 @@ export default function Appointment(props) {
         transition(SHOW);
       })
       .catch((error) => {
-        console.log(error.message);
+        console.log(error);
         transition(ERROR_SAVE, true)
       })
   }
@@ -49,13 +49,13 @@ export default function Appointment(props) {
         transition(EMPTY);
       })
       .catch((error) => {
-        console.log(error.message);
+        console.log(error);
         transition(ERROR_DELETE, true);
       })
   }
 
   return (
-    <article className="appointment">
+    <article className="appointment" data-testid="appointment">
       <Header time={props.time}/>
       {mode === EMPTY && 
         <Empty 

@@ -6,7 +6,7 @@ import Button from "components/Button";
 
 afterEach(cleanup);
 
-describe.skip('Button Tests', () => {
+describe('Button Tests', () => {
   it("renders without crashing", () => {
     render(<Button />);
   });
