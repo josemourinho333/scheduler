@@ -2,6 +2,8 @@ import React from 'react';
 import InterviewerListItem from 'components/InterviewerListItem';
 import './InterviewerList.scss';
 
+import PropTypes from 'prop-types';
+
 export default function InterviewerList({ interviewers, value, onChange}) {
   const interviewersMap = interviewers.map((interviewer) => {
     return (
@@ -23,4 +25,8 @@ export default function InterviewerList({ interviewers, value, onChange}) {
       </ul>
     </section>
   )
-}
+};
+
+InterviewerList.propTypes = {
+  interviewers: PropTypes.array.isRequired
+};
