@@ -6,6 +6,4 @@ describe('Appointment Tests', () => {
   it("renders without crashing", () => {
     render(<Application />);
   });
-
-
-})
+});
