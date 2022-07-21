@@ -1,5 +1,8 @@
 # Interview Scheduler
 
+## Intro
+A simple interview/appointment booking app using React, Webpack, Babel, Axios, WebSockets and tested with Storybook, Jest and Testing Library.
+
 ## Setup
 
 Install dependencies with `npm install`.
@@ -9,6 +12,9 @@ Install dependencies with `npm install`.
 ```sh
 npm start
 ```
+
+## Screenshots
+
 
 ## Running Jest Test Framework
 
