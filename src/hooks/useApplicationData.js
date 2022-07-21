@@ -9,7 +9,7 @@ const useApplicationData = () => {
     appointments: {},
     interviewers: {}
   });
-  
+
   const setDay = (day) => {dispatch({ type: SET_DAY, day})};
 
   useEffect(() => {

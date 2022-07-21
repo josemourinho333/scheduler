@@ -5,11 +5,13 @@
   "dependencies": {
     "axios": "^0.27.2",
     "classnames": "^2.2.6",
+    "isomorphic-ws": "^5.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-hooks-testing-library": "^0.6.0",
-    "react-scripts": "3.4.4"
+    "react-scripts": "3.4.4",
+    "ws": "^8.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
