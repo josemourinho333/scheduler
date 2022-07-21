@@ -1,5 +1,5 @@
 import React from "react";
-import { render, cleanup, waitForElement, fireEvent, getByText, prettyDOM, getAllByTestId, getByAltText, getByPlaceholderText, debug, queryByText, getByDisplayValue  } from "@testing-library/react";
+import { render, cleanup, waitForElement, fireEvent, getByText, getAllByTestId, getByAltText, getByPlaceholderText, queryByText, getByDisplayValue  } from "@testing-library/react";
 import Application from "components/Application"; 
 import axios from 'axios';
 
@@ -17,7 +17,7 @@ describe('Application Tests', () => {
   });
 
   it('loads data, books and interview and reduces the spots remaining for the first day by 1', async () => {
-    const { container, debug } = render(<Application />); 
+    const { container } = render(<Application />); 
     
     await waitForElement(() => getByText(container, 'Archie Cohen'));
 
@@ -72,7 +72,7 @@ describe('Application Tests', () => {
   }); 
 
   it('loads data, edits an interview and keeps the spots remaining for Monday the same', async () => {
-    const { container, debug } = render(<Application />); 
+    const { container } = render(<Application />); 
     
     await waitForElement(() => getByText(container, 'Archie Cohen'));
 
@@ -126,7 +126,7 @@ describe('Application Tests', () => {
   it("shows the save error when failing to save an appointment", async () => {
     axios.put.mockRejectedValueOnce();
     // 1. Render the Application.
-    const { container, debug } = render(<Application />); 
+    const { container } = render(<Application />); 
     
     await waitForElement(() => getByText(container, 'Archie Cohen'));
 
